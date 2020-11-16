@@ -21,6 +21,7 @@ public class MathUtilityTest {
     //hàm test
     public void getFactorial_RunWell_IfValidArgument(){
         assertEquals(120,getFactorial(5));
+        assertEquals(0, 1);
     }
     
     //cần test xem có ném về ngoại lệ hay không
