@@ -21,12 +21,12 @@ public class MathUtilityTest {
     //hàm test
     public void getFactorial_RunWell_IfValidArgument(){
         assertEquals(120,getFactorial(5));
-        assertEquals(0, 1);
+        assertEquals(1, getFactorial(0));
     }
     
     //cần test xem có ném về ngoại lệ hay không
     // nếu ném IllegalArgumentException trong tình huống -5 
-    @Test(expected = SQLException.class)
+    @Test(expected = IllegalArgumentException.class)
     public void getFactorial_ThrowsException_IfInvalidArgument(){
         getFactorial(-5);
         // Ngoại lệ không phải là một value đem ra so sánh. Chỉ có thể đem ra kiểm tra
